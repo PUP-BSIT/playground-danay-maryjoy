@@ -12,3 +12,17 @@ var myCar = {
     }
 };
 myCar.printSpeed();
+var janeDee = {
+    full_name: "Jane Dee",
+    birthday: new Date("2002-03-25"),
+    speed: 6.5,
+    printSpeed: function () {
+        console.log("The current speed of ".concat(this.full_name, " is ").concat(this.speed, " ").concat(DistanceUnit.KILOMETER));
+    }
+};
+janeDee.printSpeed();
+function speedTest(contestant) {
+    contestant.printSpeed();
+}
+speedTest(myCar);
+speedTest(janeDee);
