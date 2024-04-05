@@ -26,3 +26,19 @@ function speedTest(contestant) {
 }
 speedTest(myCar);
 speedTest(janeDee);
+var Person2 = /** @class */ (function () {
+    function Person2() {
+        this.name = "John Doe";
+        this.email = "test@gmail.com";
+    }
+    Person2.prototype.printName = function () {
+        console.log(this.name);
+    };
+    return Person2;
+}());
+var person1 = new Person2();
+person1.printName;
+person1["name"] = "Jane Dee";
+console.log(person1["name"]);
+person1.email = "jane@test.com";
+console.log(person1.email);

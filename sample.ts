@@ -49,3 +49,20 @@ function speedTest(contestant: Contestant){
 speedTest(myCar);
 speedTest(janeDee);
 
+class Person2{
+    name: string = "John Doe";
+    email: string = "test@gmail.com";
+
+    printName(){
+        console.log(this.name);
+    }
+}
+
+const person1 = new Person2();
+person1.printName;
+
+person1["name"] = "Jane Dee";
+console.log(person1["name"]);
+person1.email = "jane@test.com"
+console.log(person1.email);
+
