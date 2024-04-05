@@ -66,3 +66,13 @@ console.log(person1["name"]);
 person1.email = "jane@test.com"
 console.log(person1.email);
 
+class Animal{
+    name: string;
+
+    constructor(name: string){
+        this.name = name;
+        console.log(`Animal object is created with name value of ${this.name}`);
+    }
+}
+
+const animal1 = new Animal("Fish Fillet");

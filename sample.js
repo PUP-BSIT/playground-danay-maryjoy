@@ -42,3 +42,11 @@ person1["name"] = "Jane Dee";
 console.log(person1["name"]);
 person1.email = "jane@test.com";
 console.log(person1.email);
+var Animal = /** @class */ (function () {
+    function Animal(name) {
+        this.name = name;
+        console.log("Animal object is created with name value of ".concat(this.name));
+    }
+    return Animal;
+}());
+var animal1 = new Animal("Fish Fillet");
